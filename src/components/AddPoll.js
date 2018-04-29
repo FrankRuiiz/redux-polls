@@ -28,8 +28,8 @@ class AddPoll extends Component {
   handleSubmit = e => {
     e.preventDefault();
     // Redirect to home page
-    console.log('Add poll: ', this.state);
-    this.props.dispatch(handleAddPoll(this.state))
+    this.props.history.push('/');
+    this.props.dispatch(handleAddPoll(this.state));
   };
 
   render() {
